@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+    <meta charset="UTF-8">
+    <title>about us</title>
+</head>
+<body background bgcolor="#b0c4de">
+
+<ul>
+    <li><a href="{% url 'my_home' %}">Home</a></li>
+    <li><a class='active' href="{% url 'my_about' %}">About us</a></li>
+    <li><a href="{% url 'my_blog' %}"> Blog</a></li>
+    <li><a href="{% url 'my_events' %}">Events</a></li>
+    <li><a href="{% url 'my_contact' %}">Contact us</a></li>
+</ul>
+
+<h2>this is about us page</h2>
+{#my images#}
+<img src="{% static 'images/bluefeather.jpg' %}" alt="" width="200" height="200">
+<img src="{% static 'images/cupstable.jpg' %}" alt="" width="200" height="200">
+<img src="{% static 'images/darkfeather.jpg' %}" alt="" width="200" height="200">
+<img src="{% static 'images/eagle.jpg' %}" alt="" width="200" height="200">
+<img src="{% static 'images/ocean.jpg' %}" alt="" width="200" height="200">
+<img src="{% static 'images/whiteblack.jpg' %}" alt="" width="200" height="200">
+<img src="{% static 'images/whiteblackfeather.jpg' %}" alt="" width="200" height="200">
+{#end of my images#}
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda corporis culpa distinctio dolor dolorem explicabo facilis labore magnam modi molestiae necessitatibus nesciunt nihil odit omnis, perspiciatis, sed tempore, voluptatem.</p>
+
+</body>
+</html>
